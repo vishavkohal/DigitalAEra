@@ -33,7 +33,18 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
 
 <!-- JS -->
+<style>
+  /* Custom CSS */
+@media (max-width: 767px) {
+  .navbar .nav-item .btn {
+    margin-top: 10px; /* Add top margin for better spacing */
+    margin-left: 0 !important; /* Override any left margin for small screens */
+    margin-right: 0 !important; /* Ensure there's no added right margin */
+    padding: 10px 15px; /* Adjust the padding to ensure buttons look good */
+  }
+}
 
+</style>
 </head>
 <body>
   <!-- Back to top button -->
@@ -65,11 +76,11 @@
               <a class="nav-link" href="contact.html" rel="noopener noreferrer" title="Contact Us">Contact</a>
             </li>
             <li class="nav-item">
-              <a class="btn btn-outline-primary ml-lg-2" href="https://digitalaera.offer18.com/m/signup_self_aff?r=&am=">Publisher Sign up</a>
+              <a class="btn btn-outline-primary ml-lg-2" href="https://digitalaera.offer18.com/m/signup_self_aff?r=&am=">Sign up</a>
             </li>
-            <li class="nav-item">
+          <!--    <li class="nav-item">
               <a class="btn btn-outline-primary ml-lg-2" href="https://digitalaera.offer18.com/m/signup_self_adv?r=&am=">Advertiser Sign up</a>
-            </li>
+            </li> -->
           </ul>
         </div>
       </div>
@@ -89,12 +100,16 @@
             <div class="right-image wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s">
               <img src="assets/img/banner_image_1.svg" style="width:100%; max-width: 500px;" alt="Banner Image depicting services provided by DigitalAraising">
             </div>
+            <!-- Moved the button here, below the picture -->
+            <a class="btn btn-outline-primary ml-lg-2 mt-3" href="https://digitalaera.offer18.com/m/signup_self_adv?r=&am=" style="display: block;">Sign up</a>
           </div>
         </div>
         <a href="#about" class="btn-scroll" data-role="smoothscroll"><span class="mai-arrow-down"></span></a>
       </div>
     </div>
     </div>
+
+
 
   </header>
   <div class="container bg-light" style="border-radius: 15px;margin-bottom: 20px;">
@@ -449,21 +464,26 @@ Drawing upon our wealth of experience, we expertly navigate crises, safeguarding
     </div>
   </div>
 
-  <footer class="page-footer bg-image" style="background-image: url(assets/img/world_pattern.svg);">
+  <footer class="page-footer" style="background-image: url(assets/img/world_pattern.svg); background-color: #222; color: #fff;">
     <div class="container">
       <div class="row mb-5">
-        <div class="col-lg-3 py-3">
+      
+        <!-- Company Info -->
+        <div class="col-lg-4 py-3">
           <h3>DigitalA<span class="text-primary">Raising</span></h3>
-          <p>Surpass the competition and establish a prominent online presence with DigitalAraising. Our team is passionate about driving your digital success. Let us be your trusted partner in achieving growth, expanding your customer base, and attaining sustainable success.</p>
+          <p>Surpass the competition and establish a prominent online presence with DigitalAraising. Our team is passionate about driving your digital success.</p>
 
-          <div class="social-media-button">
-            <a href="#"><span class="mai-logo-facebook-f"></span></a>
-            <a href="#"><span class="mai-logo-twitter"></span></a>
-            <a href="#"><span class="mai-logo-google-plus-g"></span></a>
-            <a href="#"><span class="mai-logo-instagram"></span></a>
-            <a href="#"><span class="mai-logo-youtube"></span></a>
+          <!-- Social Media Links -->
+          <div class="social-media-buttons">
+            <a href="#" aria-label="Facebook"><i class="mai-logo-facebook-f"></i></a>
+            <a href="#" aria-label="Twitter"><i class="mai-logo-twitter"></i></a>
+            <a href="#" aria-label="Google Plus"><i class="mai-logo-google-plus-g"></i></a>
+            <a href="#" aria-label="Instagram"><i class="mai-logo-instagram"></i></a>
+            <a href="#" aria-label="YouTube"><i class="mai-logo-youtube"></i></a>
           </div>
         </div>
+
+        <!-- Quick Links -->
         <div class="col-lg-3 py-3">
           <h5>Company</h5>
           <ul class="footer-menu">
@@ -473,23 +493,83 @@ Drawing upon our wealth of experience, we expertly navigate crises, safeguarding
             <li><a href="#">Terms of Service</a></li>
             <li><a href="#">Help & Support</a></li>
           </ul>
-       <!--</div>
+        </div>
+        
+        <!-- Contact Info -->
         <div class="col-lg-3 py-3">
-          <h5>Contact Us </h5>
-          <h5>COO- Deepak </h5>
-           <h5>Contact No.: 9878321036</h5>
-        </div><-->
-        <div class="col-lg-3 py-3">
-          <h5>&nbsp;</h5>
-          <h5>COO- Vikash </h5>
-           <h5>Contact No.: 8708005046</h5>
+          <h5>Contact Us</h5>
+          <p>COO- Deepak Salaria<br>Contact No.: +91-9878321036</p>
+          <p>Gurgaon, India</p>
+        </div>
+
+      </div>
+
+      <!-- Copyright -->
+      <div class="row">
+        <div class="col-12 text-center">
+          <p>&copy; 2023 DigitalA<span class="text-primary">Raising</span>. All rights reserved.</p>
         </div>
       </div>
-      <p>Gurgaon, India</p>
-      <p class="text-center" id="copyright">Copyright &copy; 2023. DigitalA<span class="text-primary">raising.</p>
+
     </div>
   </footer>
+
   <style>
+       @media (max-width: 768px) {
+          .page-footer .row > div {
+            text-align: center;
+            margin-bottom: 20px;
+          }
+
+          .page-footer .row > div:last-child {
+            margin-bottom: 0;
+          }
+
+          .social-media-buttons {
+            justify-content: center;
+          }
+          
+          .social-media-buttons a {
+            font-size: 24px; /* Slightly larger icons for easier interaction */
+          }
+        }
+    .page-footer {
+  padding: 40px 0;
+  background-color: #222; 
+  color: #ddd; 
+  background-size: cover;
+}
+
+.page-footer a {
+  color: #ddd;
+}
+
+.page-footer a:hover {
+  color: #fff;
+}
+
+.social-media-buttons a {
+  display: inline-block;
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+.footer-menu {
+  list-style: none;
+  padding-left: 0;
+}
+
+.footer-menu a {
+  text-decoration: none;
+  color: #ddd;
+  transition: color 0.3s;
+}
+
+.footer-menu a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
  .card-service:hover {
     background-color: rgba(100, 95, 136, 0.5); /* Slightly lighter bluish-grey color */
     transition: 0.5s;

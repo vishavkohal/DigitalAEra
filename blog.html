@@ -208,21 +208,26 @@
     </div>
   </div>
 
-  <footer class="page-footer bg-image" style="background-image: url(assets/img/world_pattern.svg);">
+  <footer class="page-footer" style="background-image: url(assets/img/world_pattern.svg); background-color: #222; color: #fff;">
     <div class="container">
       <div class="row mb-5">
-        <div class="col-lg-3 py-3">
-          <h3>DigitalA<span class="text-primary">Era</span></h3>
-          <p>Surpass the competition and establish a prominent online presence with DigitalAraising. Our team is passionate about driving your digital success. Let us be your trusted partner in achieving growth, expanding your customer base, and attaining sustainable success.</p>
+      
+        <!-- Company Info -->
+        <div class="col-lg-4 py-3">
+          <h3>DigitalA<span class="text-primary">Raising</span></h3>
+          <p>Surpass the competition and establish a prominent online presence with DigitalAraising. Our team is passionate about driving your digital success.</p>
 
-          <div class="social-media-button">
-            <a href="#"><span class="mai-logo-facebook-f"></span></a>
-            <a href="#"><span class="mai-logo-twitter"></span></a>
-            <a href="#"><span class="mai-logo-google-plus-g"></span></a>
-            <a href="#"><span class="mai-logo-instagram"></span></a>
-            <a href="#"><span class="mai-logo-youtube"></span></a>
+          <!-- Social Media Links -->
+          <div class="social-media-buttons">
+            <a href="#" aria-label="Facebook"><i class="mai-logo-facebook-f"></i></a>
+            <a href="#" aria-label="Twitter"><i class="mai-logo-twitter"></i></a>
+            <a href="#" aria-label="Google Plus"><i class="mai-logo-google-plus-g"></i></a>
+            <a href="#" aria-label="Instagram"><i class="mai-logo-instagram"></i></a>
+            <a href="#" aria-label="YouTube"><i class="mai-logo-youtube"></i></a>
           </div>
         </div>
+
+        <!-- Quick Links -->
         <div class="col-lg-3 py-3">
           <h5>Company</h5>
           <ul class="footer-menu">
@@ -233,25 +238,125 @@
             <li><a href="#">Help & Support</a></li>
           </ul>
         </div>
+        
+        <!-- Contact Info -->
         <div class="col-lg-3 py-3">
           <h5>Contact Us</h5>
-          <p>Kahanpur, Pathankot, India</p>
-          <a href="#" class="footer-link">+91 7009482738</a>
-          <a href="#" class="footer-link">vishav@temporary.com</a>
+          <p>COO- Deepak Salaria<br>Contact No.: +91-9878321036</p>
+          <p>Gurgaon, India</p>
         </div>
-        <div class="col-lg-3 py-3">
-          <h5>Newsletter</h5>
-          <p>Get updates, news or events on your mail.</p>
-          <form action="#">
-            <input type="text" class="form-control" placeholder="Enter your email..">
-            <button type="submit" class="btn btn-success btn-block mt-2">Subscribe</button>
-          </form>
+
+      </div>
+
+      <!-- Copyright -->
+      <div class="row">
+        <div class="col-12 text-center">
+          <p>&copy; 2023 DigitalA<span class="text-primary">Raising</span>. All rights reserved.</p>
         </div>
       </div>
 
-      <p class="text-center" id="copyright">Copyright &copy; 2023. DigitalA<span class="text-primary">Era.</p>
     </div>
   </footer>
+
+  <style>
+       @media (max-width: 768px) {
+          .page-footer .row > div {
+            text-align: center;
+            margin-bottom: 20px;
+          }
+
+          .page-footer .row > div:last-child {
+            margin-bottom: 0;
+          }
+
+          .social-media-buttons {
+            justify-content: center;
+          }
+          
+          .social-media-buttons a {
+            font-size: 24px; /* Slightly larger icons for easier interaction */
+          }
+        }
+    .page-footer {
+  padding: 40px 0;
+  background-color: #222; 
+  color: #ddd; 
+  background-size: cover;
+}
+
+.page-footer a {
+  color: #ddd;
+}
+
+.page-footer a:hover {
+  color: #fff;
+}
+
+.social-media-buttons a {
+  display: inline-block;
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+.footer-menu {
+  list-style: none;
+  padding-left: 0;
+}
+
+.footer-menu a {
+  text-decoration: none;
+  color: #ddd;
+  transition: color 0.3s;
+}
+
+.footer-menu a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+ .card-service:hover {
+    background-color: rgba(100, 95, 136, 0.5); /* Slightly lighter bluish-grey color */
+    transition: 0.5s;
+}
+    .card-service:hover h5, 
+    .card-service:hover p,
+    .card-service:hover a {
+        color: white;
+    }
+    @keyframes fillup {
+  0% { width: 0; }
+  100% { width: 100%; } 
+}
+
+.progress {
+  flex: 1 0 0; /* This will take up the remaining available width of the parent */
+  margin-bottom: 1rem; /* Adds space between the two progress bars */
+}
+.progress-bar {
+   font-size: 15px; /* adjust size as per need */
+   font-weight: bold;
+     color: #000000;
+}
+.progress-bar {
+  animation: fillup 2s ease-out forwards;
+  background-color: #47cfa4; /* changes the color to grey */
+}
+.banner-info {
+    padding: 0;
+    background-color: #553e7e;
+    color: rgba(255, 255, 255, 0.8);
+}
+@media (max-width: 767px) {
+  .navbar .nav-item .btn {
+    margin-top: 10px; /* Add top margin for better spacing */
+    margin-left: 0 !important; /* Override any left margin for small screens */
+    margin-right: 0 !important; /* Ensure there's no added right margin */
+    padding: 10px 15px; /* Adjust the padding to ensure buttons look good */
+  }
+}
+
+    </style>
+
 
 <script src="assets/js/jquery-3.5.1.min.js"></script>
 
